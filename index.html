@@ -1,0 +1,148 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+  <link rel="stylesheet" href="">
+  <script src="https://kit.fontawesome.com/46591dc522.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>CommonShop</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+        <a href="https://www.facebook.com/CommonSh0p">
+            <img src="images/">
+                <h3 class="text-owner">Sutthinon Thamasen</h3>
+        </a>
+    </div>
+
+    <ul class="nav-links">
+        <li class="link"><a href="#">Home</a></li>
+        <li id="link1" class="link"><a href="#">About</a></li>
+        <li id="link3" class="link"><a href="#">Contact</a></li>
+    </ul>
+</nav>
+    <header class="container aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1200">
+      <div class="content">
+      <span class="blur"></span>
+      <span class="blur"></span>
+      <h1 data-aos="fade-left" data-aos-duration="1500" class="aos-init aos-animate">Hello, I'm</h1>
+      <h1 data-aos="fade-left" data-aos-duration="1700" class="aos-init aos-animate">Sutthinon Thmmasen</h1>
+      <h3 data-aos="fade-left" data-aos-duration="1700" class="aos-init aos-animate">And I'm a Front-end Developer</h3> 
+      <p data-aos="fade-left" data-aos-duration="1900" class="aos-init aos-animate">
+        Hi I'm Sutthinon Thammasen. a passionate front-end and Back-end Developer interesting in design concepts into seamless and interactive web experiences using HTML, CSS, PHP, MySQL and JavaScripts.
+      </p>
+      <a class="btn-main pt-2 pb-2" href="#">Download CV</a>
+    </div>
+    <div class="imi aos-init aos-animate" data-aos="fade-up" data-aos-duration="2100"><img src="images/"></div>
+    </header>
+    <section class="container">
+      <h2 class="header aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">Experiences</h2>
+      <div class="features">
+        <div class="card bg-glass aos-init aos-animate" data-aos="fade-up" data-aos-duration="2400">
+            <span><i class="ri-html5-fill"></i></span><span><i class="ri-css3-fill"></i></span>
+            <h4>HTML and CSS</h4>
+            <p>
+                I have over 3 years of experience using HTML and CSS, working on many projects. Passionate about designing and decorating websites to make them beautiful and seamless.
+            </p>
+        </div>
+        <div class="card bg-glass aos-init aos-animate" data-aos="fade-up" data-aos-duration="2200">
+            <span><i class="fa-brands fa-php"></i></span>
+            <h4>PHP</h4>
+            <p>
+              I have back-end experience using PHP for many projects, mostly websites with back-end management. and had the opportunity to make the back-end Mobile Application KohTao for Wolves Corporation.
+            </p>
+        </div>
+        <div class="card bg-glass aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
+          <span><i class="fa-solid fa-database"></i></span>
+          <h4>Database</h4>
+          <p>
+              
+          </p>
+      </div>
+    <div class="card bg-glass aos-init aos-animate" data-aos="fade-up" data-aos-duration="1800">
+      <span><i class="fa-brands fa-js"></i></i></span>
+      <h4>JavaScripts</h4>
+      <p>
+          
+      </p>
+  </div>
+    </div>
+  </section>
+  <div class="copyright">
+    Copyright © 2024 ME DEV. All Rights Reserved.
+  </div>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  
+</body>
+</html>
+
+<script>
+function typeWriter(element, text, speed) {
+  let i = 0;
+  const intervalId = setInterval(function() {
+    if (element && i < text.length) {
+      element.innerHTML += text.charAt(i);
+      i++;
+    } else {
+      clearInterval(intervalId);
+    }
+  }, speed);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const aboutLink = document.getElementById("link1");
+  const h2Element = document.querySelector('.header');
+  const h3Element = document.querySelector('h3.aos-init.aos-animate');
+
+  if (aboutLink && h2Element && h3Element) {
+    aboutLink.addEventListener('click', function() {
+      h2Element.innerHTML = '';
+      h3Element.innerHTML = '';
+
+      const textToTypeH2 = "Experiences";
+      const typingSpeed = 100;
+
+      typeWriter(h2Element, textToTypeH2, typingSpeed);
+      setTimeout(() => typeWriter(h3Element, textToTypeH3, typingSpeed), textToTypeH2.length * typingSpeed);
+      
+    });
+  }
+});
+
+</script>
+
+<script>
+  function typeWriter(element, text, speed) {
+  let i = 0;
+  const intervalId = setInterval(function() {
+    if (element) {
+      element.innerHTML += text.charAt(i);
+      i++;
+      if (i === text.length) {
+        clearInterval(intervalId);
+      }
+    }
+  }, speed);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const h3Element = document.querySelector('h3.aos-init.aos-animate');
+  const textToType = "And I'm a Front-end Developer";
+  const typingSpeed = 50;
+
+  if (h3Element) {
+    h3Element.innerHTML = '';
+    typeWriter(h3Element, textToType, typingSpeed);
+  }
+});
+</script>
