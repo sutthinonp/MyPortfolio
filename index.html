@@ -35,7 +35,7 @@
       <span class="blur"></span>
       <h1 data-aos="fade-left" data-aos-duration="1500" class="aos-init aos-animate">Hello, I'm</h1>
       <h1 data-aos="fade-left" data-aos-duration="1700" class="aos-init aos-animate">Sutthinon Thmmasen</h1>
-      <h3 data-aos="fade-left" data-aos-duration="1700" class="aos-init aos-animate">And I'm a Front-end Developer</h3> 
+      <h3 data-aos="fade-left" data-aos-duration="1700" class="aos-init aos-animate">And I'm a Full-stack and Front-end Developer</h3> 
       <p data-aos="fade-left" data-aos-duration="1900" class="aos-init aos-animate">
         Hi I'm Sutthinon Thammasen. a passionate front-end and Back-end Developer interesting in design concepts into seamless and interactive web experiences using HTML, CSS, PHP, MySQL and JavaScripts.
       </p>
@@ -71,13 +71,13 @@
       <span><i class="fa-brands fa-js"></i></i></span>
       <h4>JavaScripts</h4>
       <p>
-          I have 
+            I'm interested in designing and decorating websites to make them beautiful and seamless websites with JavaScript.
       </p>
   </div>
     </div>
   </section>
   <div class="copyright">
-    Copyright © 2024 ME DEV. All Rights Reserved.
+            Copyright © 2024 ME DEV. All Rights Reserved.
   </div>
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   const h3Element = document.querySelector('h3.aos-init.aos-animate');
-  const textToType = "And I'm a Front-end Developer";
+  const textToType = "And I'm a Full-stack and Front-end Developer";
   const typingSpeed = 50;
 
   if (h3Element) {
@@ -145,4 +145,17 @@ document.addEventListener('DOMContentLoaded', function() {
     typeWriter(h3Element, textToType, typingSpeed);
   }
 });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const aboutLink = document.getElementById("link1");
+    const experiencesSection = document.querySelector('.experiences-section');
+
+    if (aboutLink && experiencesSection) {
+      aboutLink.addEventListener('click', function() {
+        experiencesSection.style.display = experiencesSection.style.display === 'none' ? 'block' : 'none';
+      });
+    }
+  });
 </script>
