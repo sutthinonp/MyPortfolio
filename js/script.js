@@ -14,10 +14,11 @@ if (link1) {
   });
 }
 
-// Remove the event listener for the removed "Login" button
-
 if (link3) {
   link3.addEventListener('click', () => {
     scrollToElement('.copyright');
   });
 }
+
+
+
