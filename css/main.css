@@ -440,7 +440,42 @@ footer .column > a:hover{
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
 
-  
+.circular-image {
+  border-radius: 50%;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Media query for screens with a maximum width of 767px (typical mobile devices) */
+@media only screen and (max-width: 767px) {
+  .footer {
+      padding: 10px;
+  }
+
+  .footer h3 {
+      font-size: 1.2em;
+  }
+
+  .footer span {
+      margin-bottom: 5px;
+  }
 }
 
