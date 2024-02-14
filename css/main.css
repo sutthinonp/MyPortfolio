@@ -444,9 +444,9 @@ footer .column > a:hover{
 
 .circular-image {
   border-radius: 50%;
-  width: 100px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
-  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .footer {
@@ -464,7 +464,6 @@ footer .column > a:hover{
   margin-bottom: 8px;
 }
 
-/* Media query for screens with a maximum width of 767px (typical mobile devices) */
 @media only screen and (max-width: 767px) {
   .footer {
       padding: 10px;
